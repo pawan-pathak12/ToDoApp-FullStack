@@ -1,20 +1,79 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo App</title>
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Todo App</h1>
-        <form id="todo-form">
-            <input type="text" id="todo-title" placeholder="Enter todo..." required>
-            <button type="submit">Add</button>
-        </form>
-        <ul id="todo-list"></ul>
-    </div>
-    <script src="app.js"></script>
+  <div class="container">
+    <header class="hero">
+      <h1>Welcome to Todo App</h1>
+      <p class="sub">Simple CRUD on your ASP.NET Core API</p>
+    </header>
+
+    <div id="msg" class="msg" hidden></div>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="list">List</button>
+      <button class="tab" data-tab="get">Get by ID</button>
+      <button class="tab" data-tab="add">Create</button>
+      <button class="tab" data-tab="update">Update Status</button>
+      <button class="tab" data-tab="delete">Delete</button>
+    </nav>
+
+    <section id="tab-list" class="panel active">
+      <div class="row">
+        <button id="btn-reload" class="btn">Reload</button>
+      </div>
+      <ul id="todos" class="list"></ul>
+    </section>
+
+    <section id="tab-get" class="panel">
+      <form id="form-get" class="form">
+        <input type="number" id="get-id" placeholder="Todo ID" required />
+        <button type="submit" class="btn">Fetch</button>
+      </form>
+      <pre id="get-result" class="code" aria-live="polite"></pre>
+    </section>
+
+    <section id="tab-add" class="panel">
+      <form id="form-add" class="form">
+        <input type="text" id="add-title" placeholder="Title..." required />
+        <button type="submit" class="btn primary">Add</button>
+      </form>
+    </section>
+
+    <section id="tab-update" class="panel">
+      <form id="form-load" class="form">
+        <input type="number" id="upd-id" placeholder="Todo ID" required />
+        <button type="submit" class="btn">Load</button>
+      </form>
+
+      <div id="upd-area" class="card" hidden>
+        <div class="row">
+          <div>
+            <div class="muted">Title</div>
+            <div id="upd-title"></div>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="upd-completed" />
+            <span>Completed</span>
+          </label>
+        </div>
+        <button id="btn-save" class="btn primary">Save</button>
+      </div>
+    </section>
+
+    <section id="tab-delete" class="panel">
+      <form id="form-del" class="form">
+        <input type="number" id="del-id" placeholder="Todo ID" required />
+        <button type="submit" class="btn danger">Delete</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="../js/app.js" defer></script>
 </body>
 </html>
