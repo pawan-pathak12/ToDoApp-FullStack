@@ -1,3 +1,4 @@
+C:\Users\NITRO V\source\repos\Connecting to fronthand\ToDoAppl\backend\todoapi\bin\Debug\net9.0\web.config
 C:\Users\NITRO V\source\repos\Connecting to fronthand\ToDoAppl\backend\todoapi\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\NITRO V\source\repos\Connecting to fronthand\ToDoAppl\backend\todoapi\bin\Debug\net9.0\appsettings.json
 C:\Users\NITRO V\source\repos\Connecting to fronthand\ToDoAppl\backend\todoapi\bin\Debug\net9.0\todoapi.staticwebassets.endpoints.json

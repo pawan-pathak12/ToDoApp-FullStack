@@ -1,5 +1,7 @@
 // Change this if you expose an HTTP endpoint for dev (e.g., http://localhost:5013)
-const API_BASE = "https://localhost:5012/api/Todo";
+//const API_BASE = "https://localhost:5012/api/Todo";
+const apiUrl = "http://pawandev12-001-site1.anytempurl.com/api/Todo";
+
 
 // Utilities
 const $ = (sel) => document.querySelector(sel);

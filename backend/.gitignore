@@ -17,3 +17,6 @@ ToDoAppl\backend\todoapi\.vs
 ToDoAppl\backend\todoapi\.bin
 ToDoAppl\backend\todoapi\.idea
 ToDoAppl\backend\todoapi\.obj
+
+ToDoAppl\backend\todoapi/appsettings.Development.json
+appsettings.Development.json
