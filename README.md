@@ -56,7 +56,7 @@ app.Run();
 **🎨 Frontend Setup**
 1. 	Place , , and  inside .
 2. 	In , set API base:
-const API_BASE = "https://pawandev12-001-site1.anytempurl.com/api/Todo";
+const API_BASE = "yourapibase";
 3. 	Deploy to Netlify or Cloudflare Pages:
 • 	Root directory: 
 • 	Build command: 
